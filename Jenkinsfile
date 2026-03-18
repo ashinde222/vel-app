@@ -15,7 +15,7 @@ pipeline{
 
 				steps  {
 
-					sh "sudo yum install httpd -y"
+					sh "yum install httpd -y"
 			    		}
 
 				}
@@ -24,7 +24,7 @@ pipeline{
 
 				steps  {
 
-					sh "sudo service start httpd"
+					sh "service start httpd"
 			    		}
 
 			
