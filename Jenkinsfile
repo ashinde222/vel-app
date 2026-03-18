@@ -4,7 +4,7 @@ pipeline{
 			
 			label {
 
-				label "built-in"
+				label "slave-1"
 				customWorkspace "/mnt/vel-app-1"
 				}
 
@@ -34,8 +34,8 @@ pipeline{
 
 				steps  {
 
-					sh "cp -r index.html /var/www/html/"
-					sh "chmod -R 777 /var/www/html/index.html"
+					sh "sudo cp -r index.html /var/www/html/"
+					sh "sudo chmod -R 777 /var/www/html/index.html"
 			    		}
 
 			
