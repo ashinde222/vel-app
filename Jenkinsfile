@@ -2,15 +2,12 @@ pipeline{
 
 		agent any
 			
-		Stages {
-			stage ("one"){
+		stages {
+				stage ("one"){
+				steps{
+						echo "repository clone"
+							 }
+					}
+		    	}
 
-			steps{
-
-			echo "repository clone"
-}
-
-}
-}
-
-}
+		}
